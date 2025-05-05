@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { ProjectCard } from "@/components/project-card"
 import { Button } from "@/components/ui/button"
 
-type Category = "All" | "Web Development" | "Data Science" | "Mobile" | "Desktop"
+type Category = "All" | "Web Development" | "Data Science" 
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All")
