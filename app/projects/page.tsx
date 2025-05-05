@@ -10,7 +10,7 @@ type Category = "All" | "Web Development" | "Data Science"
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All")
 
-  const categories: Category[] = ["All", "Web Development", "Data Science", "Mobile", "Desktop"]
+  const categories: Category[] = ["All", "Web Development", "Data Science"]
 
   const containerVariants = {
     hidden: { opacity: 0 },
