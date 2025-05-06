@@ -38,7 +38,7 @@ export default function SkillsPage() {
         </motion.div>
 
         <div className="grid gap-12">
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Programming Languages"
               icon={<Code className="h-6 w-6" />}
@@ -52,7 +52,7 @@ export default function SkillsPage() {
             </SkillCategory>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Web Development"
               icon={<Layout className="h-6 w-6" />}
@@ -66,7 +66,7 @@ export default function SkillsPage() {
             </SkillCategory>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Artificial Intelligence"
               icon={<Server className="h-6 w-6" />}
@@ -77,7 +77,7 @@ export default function SkillsPage() {
             </SkillCategory>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Database & API"
               icon={<Database className="h-6 w-6" />}
@@ -88,7 +88,7 @@ export default function SkillsPage() {
             </SkillCategory>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Technical Skills"
               icon={<Settings className="h-6 w-6" />}
@@ -100,7 +100,7 @@ export default function SkillsPage() {
             </SkillCategory>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} whileHover={{ y: -5 }} transition={{ type: "spring", stiffness: 200 }}>
             <SkillCategory
               title="Languages"
               icon={<MessageSquare className="h-6 w-6" />}

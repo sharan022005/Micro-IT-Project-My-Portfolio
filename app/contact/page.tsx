@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -84,6 +84,19 @@ export default function ContactPage() {
               title="Email"
               content="sharan2582005@gmail.com"
               link="mailto:sharan2582005@gmail.com"
+            />
+          </motion.div>
+
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <ContactCard
+              icon={<Linkedin className="h-6 w-6" />}
+              title="LinkedIn"
+              content="sharan-babu-642827295"
+              link="https://linkedin.com/in/sharan-babu-642827295"
             />
           </motion.div>
 

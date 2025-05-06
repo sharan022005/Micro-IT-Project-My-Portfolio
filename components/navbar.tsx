@@ -34,7 +34,6 @@ export function Navbar() {
     { href: "/skills", label: "Skills" },
     { href: "/projects", label: "Projects" },
     { href: "/achievements", label: "Achievements" },
-   
   ]
 
   const navbarVariants = {
@@ -90,7 +89,11 @@ export function Navbar() {
         className="container flex h-16 items-center justify-between px-4 md:px-6"
       >
         <Link href="/" className="flex items-center gap-2">
-          <motion.div variants={itemVariants} whileHover={{ scale: 1.05 }} className="font-bold text-xl text-blue-600">
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05, color: "#3b82f6" }}
+            className="font-bold text-xl text-blue-600"
+          >
             Sharan Babu
           </motion.div>
         </Link>
@@ -110,9 +113,11 @@ export function Navbar() {
 
         <motion.div variants={itemVariants} className="flex items-center gap-2">
           <ThemeToggle />
-          <Button asChild variant="default" size="sm" className="hidden md:flex bg-blue-600 hover:bg-blue-700">
-            <Link href="/contact">CONTACT</Link>
-          </Button>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Button asChild variant="default" size="sm" className="hidden md:flex bg-blue-600 hover:bg-blue-700">
+              <Link href="/contact">CONTACT</Link>
+            </Button>
+          </motion.div>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
             <Menu className="h-6 w-6" />
             <span className="sr-only">Toggle menu</span>

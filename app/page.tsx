@@ -91,7 +91,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Certifications Section */}
+      {/* Achievements Section */}
       <section className="py-20 bg-gradient-to-b from-muted to-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -108,26 +108,10 @@ export default function Home() {
               title="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate"
               issuer="Oracle"
               date="2023"
-              image="/placeholder.svg?height=200&width=200"
             />
-            <CertificateCard
-              title="Certified HTML Developer"
-              issuer="Ceeras"
-              date="2023"
-              image="/placeholder.svg?height=200&width=200"
-            />
-            <CertificateCard
-              title="AI Foundation Certification"
-              issuer="Infosys | Springboard"
-              date="2023"
-              image="/placeholder.svg?height=200&width=200"
-            />
-            <CertificateCard
-              title="Joy of Computing using Python"
-              issuer="NPTEL"
-              date="2023"
-              image="/placeholder.svg?height=200&width=200"
-            />
+            <CertificateCard title="Certified HTML Developer" issuer="Ceeras" date="2023" />
+            <CertificateCard title="AI Foundation Certification" issuer="Infosys | Springboard" date="2023" />
+            <CertificateCard title="Joy of Computing using Python" issuer="NPTEL" date="2023" />
           </div>
           <div className="flex justify-center mt-12">
             <Button asChild variant="outline" className="group">

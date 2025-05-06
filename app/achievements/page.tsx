@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { CertificateCard } from "@/components/certificate-card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function CertificationsPage() {
+export default function AchievementsPage() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -26,14 +26,12 @@ export default function CertificationsPage() {
       title: "Joy of Computing using Python",
       issuer: "NPTEL",
       date: "2023",
-      image: "/placeholder.svg?height=200&width=200",
       description: "Comprehensive course covering Python programming concepts and applications.",
     },
     {
       title: "Soft Skill Development",
       issuer: "NPTEL",
       date: "2023",
-      image: "/placeholder.svg?height=200&width=200",
       description: "Course focused on developing essential soft skills for professional growth.",
     },
   ]
@@ -43,7 +41,6 @@ export default function CertificationsPage() {
       title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
       issuer: "Oracle",
       date: "2023",
-      image: "/placeholder.svg?height=200&width=200",
       description: "Professional certification validating expertise in AI foundations on Oracle Cloud Infrastructure.",
     },
   ]
@@ -53,14 +50,12 @@ export default function CertificationsPage() {
       title: "Certified HTML Developer",
       issuer: "Ceeras",
       date: "2023",
-      image: "/placeholder.svg?height=200&width=200",
       description: "Certification demonstrating proficiency in HTML development.",
     },
     {
       title: "AI Foundation Certification",
       issuer: "Infosys | Springboard",
       date: "2023",
-      image: "/placeholder.svg?height=200&width=200",
       description: "Certification validating knowledge of AI foundations and applications.",
     },
   ]
@@ -101,7 +96,6 @@ export default function CertificationsPage() {
                       title={cert.title}
                       issuer={cert.issuer}
                       date={cert.date}
-                      image={cert.image}
                       description={cert.description}
                     />
                   </motion.div>
@@ -122,7 +116,6 @@ export default function CertificationsPage() {
                       title={cert.title}
                       issuer={cert.issuer}
                       date={cert.date}
-                      image={cert.image}
                       description={cert.description}
                     />
                   </motion.div>
@@ -143,7 +136,6 @@ export default function CertificationsPage() {
                       title={cert.title}
                       issuer={cert.issuer}
                       date={cert.date}
-                      image={cert.image}
                       description={cert.description}
                     />
                   </motion.div>

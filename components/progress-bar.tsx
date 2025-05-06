@@ -11,8 +11,24 @@ export function ProgressBar({ skill, percentage }: ProgressBarProps) {
   return (
     <div className="space-y-2">
       <div className="flex justify-between">
-        <span className="text-sm font-medium">{skill}</span>
-        <span className="text-sm text-muted-foreground">{percentage}%</span>
+        <motion.span
+          className="text-sm font-medium"
+          initial={{ opacity: 0, x: -10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {skill}
+        </motion.span>
+        <motion.span
+          className="text-sm text-muted-foreground"
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          {percentage}%
+        </motion.span>
       </div>
       <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
         <motion.div

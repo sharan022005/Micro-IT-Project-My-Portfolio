@@ -64,19 +64,23 @@ export function HeroSection() {
               development projects. Experienced in building web applications with modern technologies.
             </motion.p>
             <motion.div variants={itemVariants} className="flex flex-col gap-2 min-[400px]:flex-row">
-  <Button asChild size="lg">
-    <Link href="/contact">
-      Contact Me
-      <ArrowRight className="ml-2 h-4 w-4" />
-    </Link>
-  </Button>
-  <Button variant="outline" size="lg" asChild>
-    <Link href="https://drive.google.com/file/d/108T1D66QAfCEAvWP3QT8jo2Hy4_TC5ta/view?usp=sharing" target="_blank" rel="noreferrer">
-      <Download className="mr-2 h-4 w-4" />
-      Download Resume
-    </Link>
-  </Button>
-</motion.div>
+              <Button asChild size="lg">
+                <Link href="/contact">
+                  Contact Me
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link
+                  href="https://drive.google.com/file/d/108T1D66QAfCEAvWP3QT8jo2Hy4_TC5ta/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </Link>
+              </Button>
+            </motion.div>
             <motion.div variants={itemVariants} className="flex gap-4 mt-4">
               <Link
                 href="https://github.com/Sharanbabu-1089"
@@ -113,7 +117,7 @@ export function HeroSection() {
               animate={floatingAnimation}
               className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/0"
             />
-            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/10">
+            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/30">
               SB
             </div>
           </motion.div>

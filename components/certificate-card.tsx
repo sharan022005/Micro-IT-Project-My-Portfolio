@@ -1,29 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
-import Image from "next/image"
+import { Award } from "lucide-react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 interface CertificateCardProps {
   title: string
   issuer: string
   date: string
-  image: string
+  image?: string
   description?: string
 }
 
-export function CertificateCard({ title, issuer, date, image, description }: CertificateCardProps) {
+export function CertificateCard({ title, issuer, date, description }: CertificateCardProps) {
   return (
     <Card className="overflow-hidden border-none shadow-md transition-all duration-200 hover:shadow-lg">
       <CardHeader className="flex flex-row items-center gap-4 p-6">
-        <motion.div whileHover={{ rotate: 5 }} className="h-16 w-16 overflow-hidden rounded-md bg-muted">
-          <Image
-            src={image || "/placeholder.svg"}
-            alt={`${issuer} logo`}
-            width={64}
-            height={64}
-            className="h-full w-full object-cover"
-          />
+        <motion.div
+          whileHover={{ rotate: 15 }}
+          className="rounded-full bg-blue-100 dark:bg-blue-900 p-3 text-blue-600 dark:text-blue-100"
+        >
+          <Award className="h-6 w-6" />
         </motion.div>
         <div>
           <h3 className="font-semibold">{title}</h3>

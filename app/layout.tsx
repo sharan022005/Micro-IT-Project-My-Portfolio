@@ -9,8 +9,8 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Professional Portfolio",
-  description: "A showcase of my skills, projects, and professional achievements",
+  title: "SHARAN BABU",
+  description: "Fullstack Developer Portfolio - Showcasing skills, projects, and achievements",
     generator: 'v0.dev'
 }
 
