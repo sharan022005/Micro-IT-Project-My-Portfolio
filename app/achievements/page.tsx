@@ -23,6 +23,13 @@ export default function AchievementsPage() {
 
   const nptelCertifications = [
     {
+      title: "Computer Networks And Internet Protocol",
+      issuer: "NPTEL",
+      date: "2025",
+      description:
+        "Completed a 12-week course on Computer Networks and Internet Protocol",
+    },
+    {
       title: "Joy of Computing using Python",
       issuer: "NPTEL",
       date: "2023",

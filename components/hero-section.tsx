@@ -72,7 +72,7 @@ export function HeroSection() {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link
-                  href="https://drive.google.com/file/d/108T1D66QAfCEAvWP3QT8jo2Hy4_TC5ta/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1VcIXu45KTN1LjRStGr6uHwi6ROcJxcKR/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -117,7 +117,7 @@ export function HeroSection() {
               animate={floatingAnimation}
               className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/0"
             />
-            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/30">
+            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/50">
               SB
             </div>
           </motion.div>

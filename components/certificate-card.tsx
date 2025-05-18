@@ -8,7 +8,6 @@ interface CertificateCardProps {
   title: string
   issuer: string
   date: string
-  image?: string
   description?: string
 }
 

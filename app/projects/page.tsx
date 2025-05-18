@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { ProjectCard } from "@/components/project-card"
 import { Button } from "@/components/ui/button"
 
-type Category = "All" | "Web Development" | "Data Science" 
+type Category = "All" | "Web Development" | "Data Science"
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All")
@@ -38,14 +38,6 @@ export default function ProjectsPage() {
       link: "#",
     },
     {
-      title: "Doctor Listing Clone App",
-      description:
-        "Created a web application for listing and searching medical professionals. Features include user authentication, appointment scheduling, and doctor profiles.",
-      tags: ["Web Development", "Authentication", "Scheduling"],
-      category: "Web Development",
-      link: "#",
-    },
-    {
       title: "TITANIC",
       description: "Data analysis and machine learning project using the Titanic dataset to predict survival rates.",
       tags: ["Jupyter Notebook", "Data Analysis", "Machine Learning"],
@@ -72,7 +64,7 @@ export default function ProjectsPage() {
       description: "A TypeScript implementation of an Apollo GraphQL client clone.",
       tags: ["TypeScript", "GraphQL", "API"],
       category: "Web Development",
-      link: "https://github.com/Sharanbabu-1089/apollo-clone",
+      link: "https://github.com/Sharanbabu-1089/apollo-clone-",
     },
   ]
 
@@ -119,7 +111,6 @@ export default function ProjectsPage() {
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
-                image={project.image}
                 link={project.link}
               />
             </motion.div>

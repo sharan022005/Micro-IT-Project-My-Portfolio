@@ -75,9 +75,10 @@ export default function Home() {
               tags={["Web Development", "Inventory Management", "HR"]}
             />
             <ProjectCard
-              title="Doctor Listing Clone App"
-              description="A web application for listing and searching medical professionals with features including user authentication, appointment scheduling, and doctor profiles."
-              tags={["Web Application", "Authentication", "Scheduling"]}
+              title="Apollo Clone"
+              description="A TypeScript implementation of an Apollo GraphQL client clone."
+              tags={["TypeScript", "GraphQL", "API"]}
+              link="https://github.com/Sharanbabu-1089/apollo-clone-"
             />
           </div>
           <div className="flex justify-center mt-12">
