@@ -34,15 +34,6 @@ export function HeroSection() {
     },
   }
 
-  const floatingAnimation = {
-    y: [0, -10, 0],
-    transition: {
-      duration: 4,
-      repeat: Number.POSITIVE_INFINITY,
-      ease: "easeInOut",
-    },
-  }
-
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted py-24 md:py-32">
       <div className="container px-4 md:px-6">
@@ -53,18 +44,19 @@ export function HeroSection() {
                 variants={itemVariants}
                 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
               >
-                Hi, I'm <span className="text-primary">Sharan Babu</span>
+                Hi, I'm <span className="text-blue-600">Sharan Babu</span>
               </motion.h1>
               <motion.p variants={itemVariants} className="text-xl text-muted-foreground md:text-2xl">
                 Fullstack Developer
               </motion.p>
             </div>
             <motion.p variants={itemVariants} className="text-muted-foreground md:text-lg">
-              Fullstack developer focused on developing acquired skills by learning from top teams and completing
-              development projects. Experienced in building web applications with modern technologies.
+              Results-driven Fullstack Developer with a passion for creating efficient, scalable web applications.
+              Focused on expanding technical expertise through collaboration with industry experts and hands-on project
+              development.
             </motion.p>
             <motion.div variants={itemVariants} className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
                 <Link href="/contact">
                   Contact Me
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -72,7 +64,7 @@ export function HeroSection() {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <Link
-                  href="https://drive.google.com/file/d/1VcIXu45KTN1LjRStGr6uHwi6ROcJxcKR/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Pf5Zt9zx9UV16ylD1nml2uDRAIF2PGXG/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -86,7 +78,7 @@ export function HeroSection() {
                 href="https://github.com/Sharanbabu-1089"
                 target="_blank"
                 rel="noreferrer"
-                className="text-muted-foreground hover:text-foreground"
+                className="text-muted-foreground hover:text-blue-600 transition-colors"
               >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
@@ -95,12 +87,15 @@ export function HeroSection() {
                 href="https://linkedin.com/in/sharan-babu-642827295"
                 target="_blank"
                 rel="noreferrer"
-                className="text-muted-foreground hover:text-foreground"
+                className="text-muted-foreground hover:text-blue-600 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="mailto:sharan2582005@gmail.com" className="text-muted-foreground hover:text-foreground">
+              <Link
+                href="mailto:sharan2582005@gmail.com"
+                className="text-muted-foreground hover:text-blue-600 transition-colors"
+              >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
@@ -110,14 +105,10 @@ export function HeroSection() {
             initial="hidden"
             animate="visible"
             variants={imageVariants}
-            whileHover={{ scale: 1.05 }}
-            className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-full border-4 border-primary/20 bg-muted"
+            className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-full border-4 border-blue-600/20 bg-muted"
           >
-            <motion.div
-              animate={floatingAnimation}
-              className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/0"
-            />
-            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/50">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-600/0" />
+            <div className="absolute inset-0 flex items-center justify-center text-9xl font-bold text-blue-600/60">
               SB
             </div>
           </motion.div>
@@ -125,18 +116,8 @@ export function HeroSection() {
       </div>
 
       {/* Background Elements */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl"
-      />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
-        className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl"
-      />
+      <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-blue-600/5 blur-3xl" />
     </section>
   )
 }

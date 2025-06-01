@@ -30,10 +30,26 @@ export default function ProjectsPage() {
 
   const projects = [
     {
+      title: "My Portfolio Website",
+      description:
+        "Built a modern, minimalist portfolio website featuring clean design, technical skills showcase, and responsive layout. Implemented smooth navigation, interactive elements, and optimized performance for seamless user experience across all devices.",
+      tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      category: "Web Development",
+      link: "https://github.com/sharan022005/Micro-IT-Project-My-Portfolio",
+    },
+    {
       title: "ERP System",
       description:
-        "A comprehensive Enterprise Resource Planning system with modules for inventory management, human resources, and financial tracking. Implemented using modern web technologies.",
+        "Developed a comprehensive Enterprise Resource Planning system with integrated modules for inventory management, human resources, and financial tracking. Implemented responsive design principles and modern JavaScript frameworks.",
       tags: ["Web Development", "Inventory Management", "HR", "Financial Tracking"],
+      category: "Web Development",
+      link: "#",
+    },
+    {
+      title: "Doctor Listing Clone App",
+      description:
+        "Created a feature-rich web application for healthcare listings and appointment management. Implemented user authentication, search functionality, appointment scheduling, and detailed doctor profiles.",
+      tags: ["Web Application", "Authentication", "Scheduling", "Healthcare"],
       category: "Web Development",
       link: "#",
     },

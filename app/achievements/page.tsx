@@ -26,8 +26,7 @@ export default function AchievementsPage() {
       title: "Computer Networks And Internet Protocol",
       issuer: "NPTEL",
       date: "2025",
-      description:
-        "Completed a 12-week course on Computer Networks and Internet Protocol",
+      description: "Completed a 12-week course on Computer Networks and Internet Protocol from IIT Kharagpur.",
     },
     {
       title: "Joy of Computing using Python",
@@ -47,8 +46,14 @@ export default function AchievementsPage() {
     {
       title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
       issuer: "Oracle",
-      date: "2023",
+      date: "2025",
       description: "Professional certification validating expertise in AI foundations on Oracle Cloud Infrastructure.",
+    },
+    {
+      title: "Oracle AI Vector Search",
+      issuer: "Oracle",
+      date: "2025",
+      description: "Certified Professional in Oracle AI Vector Search technologies and implementations.",
     },
   ]
 

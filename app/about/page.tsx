@@ -34,7 +34,7 @@ export default function AboutPage() {
         <motion.div variants={itemVariants} className="space-y-4 text-center">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">About Me</h1>
           <p className="text-xl text-muted-foreground">
-            A passionate fullstack developer focused on building modern web applications.
+            Results-driven Fullstack Developer with a passion for creating efficient, scalable web applications.
           </p>
         </motion.div>
 
@@ -46,9 +46,9 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold">Personal Profile</h2>
           </div>
           <p className="text-muted-foreground leading-relaxed">
-            I am a dedicated fullstack developer focused on further developing acquired skills by learning from top
-            teams and completing development projects. Experienced in building web applications with modern technologies
-            and knowledgeable about mobile and desktop platforms.
+            Results-driven Fullstack Developer with a passion for creating efficient, scalable web applications. Focused
+            on expanding technical expertise through collaboration with industry experts and hands-on project
+            development. Proficient in both frontend and backend technologies.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             My approach to development is centered around clean code, best practices, and continuous learning. I believe
@@ -69,13 +69,13 @@ export default function AboutPage() {
               title="Bachelor of Technology in Artificial Intelligence And Data Science"
               organization="RMK Engineering College, Thiruvallur"
               date="Expected in 2027"
-              description="Currently pursuing a degree in Artificial Intelligence and Data Science."
+              description="Currently pursuing a degree in Artificial Intelligence and Data Science with a CGPA of 7.87."
             />
             <TimelineItem
               title="XII Grade"
               organization="Best Matriculation Higher Secondary School, Thanjavur, TN"
               date="2023"
-              description="Completed higher secondary education with excellent academic performance."
+              description="Completed higher secondary education with 82% marks."
             />
           </Timeline>
         </motion.div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             <TimelineItem
               title="Java Automation using Selenium Workshop"
               organization="TOP ENGINEERS - INDIA in association with MECHANICA 2024 - IIT MADRAS"
-              date="March 2024"
+              date="March 2025"
               description="Participated in a workshop on Java Automation using Selenium at IIT MADRAS RESEARCH PARK."
             />
           </Timeline>
